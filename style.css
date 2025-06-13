@@ -35,16 +35,13 @@ body {
     color: #fff;
 }
 .ui-input {
-    padding: 16px;
     font-size: 1rem;
     font-weight: 500;
-    border: none;
     border-radius: 10px;
     padding: 18px;
     background-color: #e5e7eb4f;
     border: 1px solid #D2D5DA;
     color: #fff;
-    cursor: pointer;
 }
 .checkout__header {
     display: flex;
@@ -71,6 +68,9 @@ body {
 .checkout__body {
     margin: 40px 0;
     max-width: 1200px;
+    display: flex;
+    border-radius: 20px;
+    overflow: hidden;
 }
 .cart {
     background-color: #E5E7EB;
@@ -136,11 +136,6 @@ body {
     justify-content: space-between;
     gap: 12px;
 }
-.checkout__body {
-    display: flex;
-    border-radius: 20px;
-    overflow: hidden;
-}
 .cart,
 .form {
     flex: 1 1 50%;
@@ -155,13 +150,6 @@ body {
     display: flex;
     gap: 8px;
     margin: 24px 0;
-}
-.form__select {
-    padding: 16px;
-    font-size: 1rem;
-    font-weight: 500;
-    border: none;
-    border-radius: 10px;
 }
 .cart__coupon-submit {
     flex: 0 0 auto;
@@ -217,15 +205,17 @@ body {
     font-weight: 600;
     color: #8a8f96;
 }
-.form__select {
-    padding: 18px;
-    background-color: #e5e7eb4f;
-    border: 1px solid #D2D5DA;
-}
 .form__submit {
     padding: 20px;
 }
 .form__select {
+    font-size: 1rem;
+    font-weight: 500;
+    border: none;
+    border-radius: 10px;
+    padding: 18px;
+    background-color: #e5e7eb4f;
+    border: 1px solid #D2D5DA;
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
