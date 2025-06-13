@@ -140,7 +140,8 @@ body {
 .form {
     flex: 1 1 50%;
     padding: 32px;
-    min-width: 0;  
+    min-width: 0; 
+    width: 100%; 
 }
 .cart__line {
     margin: 26px 0;
@@ -152,7 +153,8 @@ body {
     margin: 24px 0;
 }
 .cart__coupon-submit {
-    flex: 0 0 auto;
+    flex: 0 1 auto;
+    width: auto;
 }
 .cart__coupon-input {
     background-color: #fff;
@@ -170,7 +172,7 @@ body {
     justify-content: space-between;
     font-size: 1rem;
     font-weight: 700;
-    color: #8a8f96;
+    color: #1d1d1fe0;
 }
 .cart__price-row--total {
     color: #1D1D1F;
@@ -203,7 +205,7 @@ body {
 .form__label {
     font-size: 0.875rem;
     font-weight: 600;
-    color: #8a8f96;
+    color: #1d1d1fe0;
 }
 .form__submit {
     padding: 20px;
