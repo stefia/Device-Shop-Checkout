@@ -12,11 +12,7 @@ body {
 .checkout__wrapper {
     min-height: 100vh;
     padding-top: 40px;
-    background-image: url(resources/background-image.png);
-    background-repeat: no-repeat;
-    background-position: top;
-    background-size: 100% 240px;
-    background-color: #F3F4F6;
+    background: #F3F4F6 url("resources/background-image.png") no-repeat top / 100% 240px;
 }
 .checkout__container {
     width: 100%;
@@ -25,7 +21,7 @@ body {
     padding-inline: 40px;
 }
 .ui-button {
-    padding: 16px;
+    padding: 14px;
     font-size: 1rem;
     font-weight: 700;
     border: none;
@@ -69,11 +65,9 @@ body {
     margin: 40px 0;
     max-width: calc(1200px + 32px * 2);
     display: flex;
+    align-items: stretch;
     border-radius: 20px;
     overflow: hidden;
-}
-.cart {
-    background-color: #E5E7EB;
 }
 .cart__list {
     display: flex;
@@ -139,9 +133,14 @@ body {
 .cart,
 .form {
     flex: 1 1 50%;
-    padding: 32px;
     min-width: 0; 
-    width: 100%; 
+    padding: 32px;
+}
+.cart {
+    background-color: #E5E7EB;
+}
+.form {
+    background-color: #fff;
 }
 .cart__line {
     margin: 26px 0;
@@ -176,11 +175,6 @@ body {
 }
 .cart__price-row--total {
     color: #1D1D1F;
-}
-
-.form {
-    background-color: #fff;
-    padding: 32px;
 }
 .form__title {
     margin-bottom: 32px;
