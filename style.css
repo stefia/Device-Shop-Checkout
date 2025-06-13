@@ -41,7 +41,7 @@ body {
     padding: 18px;
     background-color: #e5e7eb4f;
     border: 1px solid #D2D5DA;
-    color: #fff;
+    color: #1D1D1F;
 }
 .checkout__header {
     display: flex;
@@ -60,14 +60,14 @@ body {
     color: #fff;
 }
 .checkout__header-badge {
-    background-color: #8b98b1;
+    background-color: #1D1D1F;
     border-radius: 20px;
     padding: 4px 12px;
 }
 
 .checkout__body {
     margin: 40px 0;
-    max-width: 1200px;
+    max-width: calc(1200px + 32px * 2);
     display: flex;
     border-radius: 20px;
     overflow: hidden;
@@ -225,6 +225,9 @@ body {
     padding-right: 2rem;
 }
 @media (max-width: 640px) {
+    .checkout__container {
+        padding-inline: 10px;
+    }
     .checkout__body {
         flex-direction: column;
     }
