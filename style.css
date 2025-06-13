@@ -69,6 +69,21 @@ body {
     border-radius: 20px;
     overflow: hidden;
 }
+.cart__inner,
+.form__inner {
+    padding: 32px;
+}
+.cart,
+.form {
+    flex: 1 1 50%;
+    min-width: 0; 
+}
+.cart {
+    background-color: #E5E7EB;
+}
+.form {
+    background-color: #fff;
+}
 .cart__list {
     display: flex;
     flex-direction: column;
@@ -130,18 +145,6 @@ body {
     justify-content: space-between;
     gap: 12px;
 }
-.cart,
-.form {
-    flex: 1 1 50%;
-    min-width: 0; 
-    padding: 32px;
-}
-.cart {
-    background-color: #E5E7EB;
-}
-.form {
-    background-color: #fff;
-}
 .cart__line {
     margin: 26px 0;
     border-color: #d2d5da2e;
@@ -192,6 +195,7 @@ body {
     flex-direction: column;
     gap: 14px;
     flex: 1 1 calc(50% - 28px);
+    min-width: 0;
 }
 .form__field--full {
     flex: 1 1 100%;
